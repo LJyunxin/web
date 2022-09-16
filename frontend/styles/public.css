@@ -1,0 +1,88 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+.container {
+    background-color: rgba(237, 236, 236, 0.727);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 4px #333;
+    height: 400px;
+    margin: 10% auto;
+    padding: 40px;
+    text-align: center;
+    width: 300px;
+}
+
+/*---------提示-------------------*/
+.container .main p[class="reminder"] {
+    margin: 0;
+    padding: 0;
+    height: 5px;
+    padding-left: 45px;
+    text-align: left;
+    font-size: small;
+    color: rgba(255, 0, 0, 0.7);
+}
+
+.container .main .input-box-warning {
+    border: 2px solid rgba(247, 125, 114, 0.7);
+    background: rgba(247, 125, 114, 0.2);
+    border-radius: 5px;
+    border-style: solid;
+    margin: 5% auto;
+    outline: none;
+    padding: 10px 40px 10px 10px;
+    text-align: left;
+}
+
+.container .main .input-box-default:focus {
+    border-color: #5e5e5e !important;
+}
+
+.container .main .input-box-warning:focus {
+    border-color: rgb(250, 92, 78) !important;
+}
+
+/*---------登录按钮----------------------*/
+.container .main .btn-login {
+    background-color: rgba(35, 93, 139, 0.90);
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px #333;
+    font-size: 15px;
+    margin: 5% auto;
+    padding: 5px 80px 5px;
+}
+
+.container .main .btn-login:hover {
+    border-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(35, 93, 139, 1);
+}
+
+.container .main .btn-login:active {
+    box-shadow: 0 0 5px #333;
+    transform: scaleX(0.98);
+}
+
+/*---------注册链接----------*/
+.container .footer-register-page,
+.container .footer-login-page {
+    color: black;
+    font-size: medium;
+    text-align: center;
+}
+
+/*---------ncuhome@2022----------*/
+.footer {
+    position: fixed;
+    bottom: 0%;
+    text-align: center;
+    width: 100%;
+    color: rgba(222, 222, 222, 0.9);
+}
