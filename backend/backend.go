@@ -14,32 +14,32 @@ import (
 )
 
 var (
-	mod                                        int
 	userName, userPassword, storedUserPassword string
 	userData                                   = make(map[string]string)
 	isPresent                                  bool //用于判断用户数据是否存在
 )
 
 func main() {
-outer:
-	fmt.Print("请输入数字进行对应操作\n1:登录 2:注册 3:修改密码 4:注销 5:退出\n")
-	fmt.Scan(&mod)
-	switch {
-	case mod == 1:
-		login()
-	case mod == 2:
-		register()
-	case mod == 3:
-		changPassword()
-	case mod == 4:
-		removeUserData()
-	case mod == 5:
-		return
+	var mod int
+	for {
+		fmt.Print("请输入数字进行对应操作\n1:登录 2:注册 3:修改密码 4:注销 5:退出\n")
+		fmt.Scan(&mod)
+		switch {
+		case mod == 1:
+			login()
+		case mod == 2:
+			register()
+		case mod == 3:
+			changPassword()
+		case mod == 4:
+			removeUserData()
+		case mod == 5:
+			return
 
-	default:
-		fmt.Println("操作不存在,请重新选择")
+		default:
+			fmt.Println("操作不存在,请重新选择")
+		}
 	}
-	goto outer
 }
 
 // 用户登录
