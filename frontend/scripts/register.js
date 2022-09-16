@@ -20,7 +20,7 @@ registerButton.onclick = function () {
     //判断密码是否为空
     if (userPassword1.value == "") {
       setStyleWarning(userPassword1);
-      userPasswordReminder1.innerHTML = "请填写密码";
+      userPasswordReminder1.innerHTML = "请输入8-24位密码";
     } else {
       setStyleDefault(userPassword1);
       userPasswordReminder1.innerHTML = "";

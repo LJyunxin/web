@@ -19,7 +19,7 @@ body {
     width: 300px;
 }
 
-/*---------提示-------------------*/
+/* 提示 */
 .container .main p[class="reminder"] {
     margin: 0;
     padding: 0;
@@ -30,12 +30,22 @@ body {
     color: rgba(255, 0, 0, 0.7);
 }
 
+/* 输入框 */
+.container .main .input-box-default {
+    border-style: solid;
+    text-align: left;
+    padding: 10px 40px 10px 10px;
+    outline: none;
+    border-radius: 5px;
+    border-color: rgba(148, 148, 148, 1);
+    background-color: rgba(158, 158, 158, 0.3);
+}
+
 .container .main .input-box-warning {
     border: 2px solid rgba(247, 125, 114, 0.7);
     background: rgba(247, 125, 114, 0.2);
     border-radius: 5px;
     border-style: solid;
-    margin: 5% auto;
     outline: none;
     padding: 10px 40px 10px 10px;
     text-align: left;
@@ -49,8 +59,9 @@ body {
     border-color: rgb(250, 92, 78) !important;
 }
 
-/*---------登录按钮----------------------*/
-.container .main .btn-login {
+/* 登录/注册按钮 */
+.container .main .btn-login,
+.container .main .btn-register {
     background-color: rgba(35, 93, 139, 0.90);
     border-radius: 5px;
     border-color: rgba(0, 0, 0, 0.1);
@@ -60,17 +71,19 @@ body {
     padding: 5px 80px 5px;
 }
 
-.container .main .btn-login:hover {
+.container .main .btn-login:hover,
+.container .main .btn-register:hover {
     border-color: rgba(0, 0, 0, 0.2);
     background-color: rgba(35, 93, 139, 1);
 }
 
-.container .main .btn-login:active {
+.container .main .btn-login:active,
+.container .main .btn-register:active {
     box-shadow: 0 0 5px #333;
     transform: scaleX(0.98);
 }
 
-/*---------注册链接----------*/
+/* 表单底部登录注册链接 */
 .container .footer-register-page,
 .container .footer-login-page {
     color: black;
@@ -78,7 +91,7 @@ body {
     text-align: center;
 }
 
-/*---------ncuhome@2022----------*/
+/* ncuhome@2022 */
 .footer {
     position: fixed;
     bottom: 0%;

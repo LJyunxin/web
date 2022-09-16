@@ -1,37 +1,5 @@
-body {
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-}
-
-.container {
-    text-align: center;
-    width: 300px;
-    height: 400px;
-    margin: 10% auto;
-    padding: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: rgba(237, 236, 236, 0.727);
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    box-shadow: 0 0 4px #333;
-}
-
 .container .header-logo {
     margin: 5px 0 5px;
-}
-
-/*-------------提示---------------*/
-.container .main p[class="reminder"] {
-    margin: 0%;
-    padding: 0%;
-    height: 5px;
-    text-align: left;
-    padding-left: 45px;
-    font-size: small;
-    color: rgba(255, 0, 0, 0.6);
 }
 
 .container .main p[class="checkbox-reminder"] {
@@ -43,76 +11,11 @@ body {
     color: rgba(255, 0, 0, 0.6);
 }
 
-/*-----------------输入框-----------------------*/
-.container .main .input-box-default {
-    border-style: solid;
-    text-align: left;
-    margin: 4% auto;
-    padding: 10px 40px 10px 10px;
-    outline: none;
-    border-radius: 5px;
-    border-color: rgba(148, 148, 148, 1);
-    background-color: rgba(158, 158, 158, 0.3);
-}
-
-.container .main .input-box-warning {
-    border-style: solid;
-    text-align: left;
-    margin: 4% auto;
-    padding: 10px 40px 10px 10px;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid rgba(247, 125, 114, 0.7);
-    background: rgba(247, 125, 114, 0.2);
-}
-
-.container .main .input-box-default:focus {
-    border-color: #5e5e5e !important;
-}
-
-.container .main .input-box-warning:focus {
-    border-color: rgb(250, 92, 78) !important;
-}
-
 .container .main .checkbox {
     padding-left: -10px;
 }
 
-/*-----------注册按钮----------------*/
-.container .main .btn-register {
-    font-size: 15px;
-    margin: 5% auto;
-    padding: 5px 80px 5px;
-    border-radius: 5px;
-    border-color: rgba(0, 0, 0, 0.1);
-    background-color: rgba(35, 93, 139, 0.90);
-    box-shadow: 0 0 4px #333;
-}
-
-.container .main .btn-register:hover {
-    border-color: rgba(0, 0, 0, 0.2);
-    background-color: rgba(35, 93, 139, 1);
-}
-
-.container .main .btn-register:active {
-    transform: scaleX(0.98);
-    box-shadow: 0 0 5px #333;
-}
-
-
-
-
-
-/*---------------登录链接------------------*/
-.container .footer-login-page {
-    text-align: center;
-}
-
-/*--------ncuhome@2022------*/
-.footer {
-    position: fixed;
-    bottom: 0%;
-    width: 100%;
-    text-align: center;
-    color: rgba(222, 222, 222, 0.9);
+.container .main .input-box-default,
+.container .main .input-box-warning {
+    margin: 4% auto;
 }
