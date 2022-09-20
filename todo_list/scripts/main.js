@@ -7,3 +7,4 @@ backgroundSwitchButton.onclick = function () {
         i = 1;
     }
 }
+
